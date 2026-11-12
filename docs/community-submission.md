@@ -1,20 +1,7 @@
-# Community Submission
+# Community publication decision
 
-Submit this repository URL:
+On 12 November 2026 the maintainer chose to direct new users to the already published [Folder Sort View](https://community.obsidian.md/plugins/folder-sort-view), rather than submit this private-API prototype as another Community plugin. See issue #1.
 
-```text
-https://github.com/viggomeesters/obsidian-folder-sort-z-to-a
-```
+The native File Explorer prototype and the successor differ: Folder Sort View supplies its own navigation pane through public APIs. It does not claim to alter the native explorer. The prototype's previous releases remain available; no repository archive, release replacement or automatic migration is performed.
 
-Before submission:
-
-- `manifest.json` id is `folder-sort-z-to-a`.
-- `README.md`, `LICENSE`, `CONTRIBUTING.md`, and `SECURITY.md` are present.
-- `npm run lint`, `npm run typecheck`, `npm test`, `npm run build`, and `npm run community:check` pass.
-- Release assets include `main.js`, `manifest.json`, and `styles.css`.
-- Test-vault smoke has been run outside the main Life OS vault.
-
-Official references:
-
-- [Submit your plugin](https://docs.obsidian.md/Plugins/Releasing/Submit%20your%20plugin)
-- [Obsidian releases repository](https://github.com/obsidianmd/obsidian-releases)
+Review found that this prototype can overwrite a later third-party patch during unload, and its delayed layout callback can patch after unload. These unresolved prototype limitations are why new installations are discouraged. Do not treat historical build checks as current compatibility approval.
