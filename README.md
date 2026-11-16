@@ -20,6 +20,8 @@ Sort folders Z-to-A in Obsidian's native File Explorer without changing files or
 
 ## Development
 
+See the [Obsidian 1.15.1 assessment](docs/obsidian-1.15.1.md) for local results and the outstanding real-host validation.
+
 ```bash
 npm install
 npm run lint
